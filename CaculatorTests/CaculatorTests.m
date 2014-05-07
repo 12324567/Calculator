@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-
+#import "SDSViewController.h"
 @interface CaculatorTests : XCTestCase
 
 @end
@@ -25,10 +25,9 @@
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
-
-- (void)testExample
+- (void)test_plus_twoNumber
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    XCTAssert(2 + 2 == [SDSViewController plusTwoNumber:2 number:2], @"2 + 2 should be 4 but %d was returned instead", 2+2);
 }
 
 @end

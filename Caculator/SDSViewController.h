@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface SDSViewController : UIViewController
-
++(NSInteger)plusTwoNumber:(NSInteger)a number:(NSInteger)b;
 @end

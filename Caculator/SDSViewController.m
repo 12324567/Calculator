@@ -25,5 +25,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
++(NSInteger)plusTwoNumber:(NSInteger)a number:(NSInteger)b{
+    return a+b;
+}
 @end
