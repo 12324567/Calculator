@@ -8,10 +8,11 @@
 
 #import <XCTest/XCTest.h>
 #import "SDSViewController.h"
+#import <objc/runtime.h>
 @interface CaculatorTests : XCTestCase
 
 @end
-
+extern void __gcov_flush();
 @implementation CaculatorTests
 
 - (void)setUp
@@ -23,6 +24,7 @@
 - (void)tearDown
 {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
+    __gcov_flush();
     [super tearDown];
 }
 - (void)test_plus_twoNumber
